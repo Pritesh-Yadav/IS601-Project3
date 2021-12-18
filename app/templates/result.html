@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+
+<div class="container">
+    <h1>Recent Result</h1>
+    <strong>Value 1: </strong> {{ value1 }} <br>
+    <strong>Value 2: </strong> {{ value2 }} <br>
+    <strong>Operation: </strong> {{ operation }} <br>
+    <strong>Result: </strong> {{ result }}
+    <br/><br/>
+    <hr/>
+    <h1>History Results</h1>
+    <table id="data" class="dataTable cell-border">
+        <thead>
+        <tr>
+            <th>Value1</th>
+            <th>Value2</th>
+            <th>Operation</th>
+            <th>Result</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in hist %}
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2].capitalize() }}</td>
+            <td>{{ item[3] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436720/particles.js"></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436735/app.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+</script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+{% endblock %}

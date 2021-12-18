@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}
+Basic Form
+{% endblock %}
+
+{% block content %}
+
+
+<h1>HTML Form</h1>
+
+<div class="container-fluid">
+
+
+    <form action="basicform" autocomplete="off" method="POST">
+        <label for="value1">Value 1:</label>
+        <input id="value1" name="value1" placeholder="Enter an integer" type="text"><br/><br/>
+        <label for="value2">Value 2:</label>
+        <input id="value2" name="value2" placeholder="Enter an integer" type="text"><br/><br/>
+        <fieldset>
+            <legend>Calculator Operations</legend>
+            <div>
+                <input checked id="addition" name="operation" type="radio" value="addition">
+                <label for="addition">Addition</label>
+            </div>
+            <div>
+                <input id="subtraction" name="operation" type="radio" value="subtraction">
+                <label for="subtraction">Subtraction</label>
+            </div>
+            <div>
+                <input id="multiplication" name="operation" type="radio" value="multiplication">
+                <label for="multiplication">Multiplication</label>
+            </div>
+            <div>
+                <input id="division" name="operation" type="radio" value="division">
+                <label for="division">Division</label>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436720/particles.js"></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436735/app.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script crossorigin="anonymous"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+{% endblock %}

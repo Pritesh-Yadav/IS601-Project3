@@ -1,0 +1,280 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+
+<html>
+<head>
+    <title>Pritesh Blog</title>
+    <link a href="" rel="stylesheet">
+</head>
+<style>
+    h1 {
+        font-size: 18pt;
+        text-align: center;
+        color: #520f0f;
+        padding: 18px 0 18px 0;
+        margin: 0 0 10px 0;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section {
+        background-color: #f5e15e;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    #header {
+        background-image: url("https://history-internet.png");
+        background-size: cover;
+    }
+    #header img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    #header p {
+        font-size: 25pt;
+        color: #3b464c;
+        padding-top: 5px;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+    .quote {
+        font-size: 12pt;
+        text-align: right;
+        margin-top: 10px;
+    }
+    table {
+        width: 100%;
+        font-size: 11pt;
+    }
+    table, th, td {
+        border: 2px solid #cecece;
+        border-collapse: collapse;
+        text-align: center;
+        table-layout: fixed;
+    }
+    .selected {
+        background-color: #f36f48;
+        font-weight: bold;
+        color: burlywood;
+    }
+    li {
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    progress {
+        width: 70%;
+        height: 20px;
+        color: #d7cd15;
+        background: #f5ed5e;
+    }
+    progress::-webkit-progress-bar {
+        background: #170101;
+    }
+    progress::-webkit-progress-value {
+        background: #3fb6b2;
+    }
+    progress::-moz-progress-bar {
+        color: #3fb6b2;
+        background: #efefef;
+    }
+    iframe, audio {
+        display: block;
+        margin: 0 auto;
+        border: 3px solid #3fb6b2;
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background: #f36f48;
+    }
+    form {
+        text-align: center;
+        margin-top: 0;
+    }
+    .submit {
+        background-color: #3fb6b2;
+        padding: 12px 45px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        margin: 0;
+        font-weight: bold;
+    }
+    .submit:hover {
+        background-color: #43a09d;
+    }
+    textarea {
+        height: 100px;
+    }
+    input, textarea {
+        margin-bottom: 10px;
+        font-size: 11pt;
+        padding: 15px 10px 10px;
+        border: 1px solid #cecece;
+        background-color: #efefef;
+        color: #787575;
+        border-radius: 5px;
+        width: 70%;
+        outline: none;
+    }
+
+    #contacts img {
+        height: 50px;
+        width: 50px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    #contacts a {
+        text-decoration: none;
+    }
+    #contacts img:hover {
+        opacity: 0.8;
+    }
+    #contacts {
+        text-align: center;
+    }
+    .copyright {
+        font-size: 8pt;
+        text-align: right;
+        padding-bottom: 10px;
+        color: grey;
+    }
+</style>
+
+<body>
+<!-- header start -->
+<div id="header" class="section">
+    <p> INTERNET-HISTORY </p>
+</div>
+<!-- header end -->
+
+<!-- My Schedule section start -->
+<div class="section">
+    <h1><span>AAA</span></h1>
+
+    <p>
+        AAA stands for Arrange, Act, Assert. AAA is a way to structure unit tests so they are easier to read, maintain
+        and enhance. AAA pattern is a pattern for structuring tests. It breaks each test down into three parts Arrange,
+        Act and Assert. Where each part is a step leading to the next. Arrange step sets up the test's input value, the
+        Act step prompts the primary function being tested, and the Assert step verifies that the output of the
+        function is what we expected.
+
+    </p>
+
+</div>
+
+
+<div class="section">
+    <h1><span>Arrange Act Assert</span></h1>
+    <p>
+        The Arrange-Act-Assert(also AAA and 3A) pattern of testing was observed and named by Bill Wake in 2001.
+        I first came across it in Kent Becks book Test Driven Development By Example and I spoke about it at PyConUK
+        2016.
+        The pattern focuses each test on a single action. The advantage of this focus is that it clearly separates the
+        arrangement of the System Under Test (SUT) and the assertions that are made on it after the action.
+        On multiple projects I ve worked on I’ve experienced organised and clean code in the main codebase but
+        disorganisation and inconsistency in the test suite. However when AAA is applied, I’ve found it helps by
+        unifying and clarifying the structure of tests which helps make the test suite much more understandable and
+        manageable.
+
+    </p>
+</div>
+
+
+
+<div class="section">
+    <h1><span>Arrange</span></h1>
+    <p>
+        Arrange step sets up the test's input value. The block of code that sets the condition for the test action.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Example</span></h1>
+    <p>
+        Arrangement block is just one line to build a list.
+
+
+
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Rules and Regulations</span></h1>
+    <p>
+        Use only a single block of code without empty lines. Should not use assert in the Arrange block. If you need to
+        make assertion about our arrangement, then this is a smell that your arrangement is too complicated and should
+        be extracted to a fixture or setup function and tested in its own right. Only prepare non-deterministic results
+        not available after action. The arrange section will not require comments. If you have a large arrangement in
+        your tests which is complex enough to require detailed comments then consider Extracting the comments into a
+        multi-line docstring. Extracting the arrangement code into the fixture and testing that fixture is establishing
+        the expected conditions as previously mentioned regulation.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Act</span></h1>
+    <p>
+        Line of code where the action is taken on the SUT. This Act step prompts the primary function being tested
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Example</span></h1>
+    <p>
+
+
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Rules</span></h1>
+    <p>
+        This makes it easier to distinguish test actions and you can avoid the hardest job in programming i.e., naming.
+        When every result is called result, then you do not need to waste brain power wondering if it should be
+        item = or response = etc. An added benefit is that you can find test actions easily with a tool like grep.
+        Even when there is no result from the action, capture it with result = and then assert result is None. In this
+        way, the SUTs behaviour is pinned.
+        If you struggle to write a single line action, then consider extracting some of that code into your arrangement.
+        The action can be wrapped in with raises for expected exceptions. In your action will be two lines surrounded
+        by empty lines.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Assert </span></h1>
+    <p>
+        The block of code which performs the assertions on the state of SUT after action. Assert step verifies that the
+        output of the function is what we expected.
+
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Example </span></h1>
+    <p>
+
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Rules</span></h1>
+    <p>
+        Use a single block of code with no empty lines. First test that results, then test side effects.
+        Limit the actions that you make in this block. No actions should happen which is not always possible.
+        Use simple blocks of assertions. If you find that you are repeatedly writing the same code to extract
+        information from the SUT and perform assertions on it, then consider extracting an assertion helper.
+    </p>
+</div>
+
+{% endblock %}

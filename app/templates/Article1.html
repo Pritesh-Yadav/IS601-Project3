@@ -1,0 +1,301 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+
+<html>
+<head>
+    <title>Pritesh Blog</title>
+    <link a href="" rel="stylesheet">
+</head>
+<style>
+    h1 {
+        font-size: 18pt;
+        text-align: center;
+        color: #520f0f;
+        padding: 18px 0 18px 0;
+        margin: 0 0 10px 0;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section {
+        background-color: #f5e15e;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    #header {
+        background-image: url("https://history-internet.png");
+        background-size: cover;
+    }
+    #header img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    #header p {
+        font-size: 25pt;
+        color: #3b464c;
+        padding-top: 5px;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+    .quote {
+        font-size: 12pt;
+        text-align: right;
+        margin-top: 10px;
+    }
+    table {
+        width: 100%;
+        font-size: 11pt;
+    }
+    table, th, td {
+        border: 2px solid #cecece;
+        border-collapse: collapse;
+        text-align: center;
+        table-layout: fixed;
+    }
+    .selected {
+        background-color: #f36f48;
+        font-weight: bold;
+        color: burlywood;
+    }
+    li {
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    progress {
+        width: 70%;
+        height: 20px;
+        color: #d7cd15;
+        background: #f5ed5e;
+    }
+    progress::-webkit-progress-bar {
+        background: #170101;
+    }
+    progress::-webkit-progress-value {
+        background: #3fb6b2;
+    }
+    progress::-moz-progress-bar {
+        color: #3fb6b2;
+        background: #efefef;
+    }
+    iframe, audio {
+        display: block;
+        margin: 0 auto;
+        border: 3px solid #3fb6b2;
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background: #f36f48;
+    }
+    form {
+        text-align: center;
+        margin-top: 0;
+    }
+    .submit {
+        background-color: #3fb6b2;
+        padding: 12px 45px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        margin: 0;
+        font-weight: bold;
+    }
+    .submit:hover {
+        background-color: #43a09d;
+    }
+    textarea {
+        height: 100px;
+    }
+    input, textarea {
+        margin-bottom: 10px;
+        font-size: 11pt;
+        padding: 15px 10px 10px;
+        border: 1px solid #cecece;
+        background-color: #efefef;
+        color: #787575;
+        border-radius: 5px;
+        width: 70%;
+        outline: none;
+    }
+
+    #contacts img {
+        height: 50px;
+        width: 50px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    #contacts a {
+        text-decoration: none;
+    }
+    #contacts img:hover {
+        opacity: 0.8;
+    }
+    #contacts {
+        text-align: center;
+    }
+    .copyright {
+        font-size: 8pt;
+        text-align: right;
+        padding-bottom: 10px;
+        color: grey;
+    }
+</style>
+
+<body>
+<!-- header start -->
+<div id="header" class="section">
+    <p> INTERNET-HISTORY </p>
+</div>
+<!-- header end -->
+
+<!-- My Schedule section start -->
+<div class="section">
+    <h1><span>Factory </span></h1>
+
+    <p>
+
+        In object-oriented programming (OOP), a factory is an object for creating other objects, formally a factory is
+        a function or method that returns objects of a varying prototype or class from some method call, which is
+        assumed to be 'new'.
+    </p>
+
+</div>
+
+
+<div class="section">
+    <h1><span>Instantiation</span></h1>
+    <p> Instantiating a class is creating a copy of the class which inherits all class variables and methods.
+        Instantiating a class in Python is simple. To instantiate a class, we simply call the class as if it were a
+        function, passing the arguments that the _init_ method defines.
+    </p>
+</div>
+
+
+
+<div class="section">
+    <h1><span>Object</span></h1>
+    <p>
+        An Object is an instance of a Class. A class is like a blueprint while an instance is a copy of the class with
+        actual values. Python is object oriented programming language which stress on objects i.e. it mainly emphasize
+        on functions.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Class</span></h1>
+    <p>
+        'Class' is a logical grouping of functions and data. Python class provides all the standard features of
+        Object Oriented Programming. In Python, a class can inherit attributes and behavior methods from another
+        class called subclass or heir class.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Namespace</span></h1>
+    <p>
+        In python, A namespace is a collection of currently defined symbolic names along with information
+        about the object that each name references. You can think of a namespace as a dictionary in which the keys are
+        the object names and the values are the objects themselves.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Constructor</span></h1>
+    <p>
+        Constructors are generally used for instantiating an object. The task of constructors is to
+        initialize(assign values) to the data members of the class when an object of the class is created. In Python
+        the _init_() method is called the constructor and is always called when an object is created.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Fixture</span></h1>
+    <p>
+        Fixtures define the steps and data that constitute the arrange phase of a test.
+        In pytest, they are functions you define that serve this purpose. They can also be used to define a test's act
+        phase; this is a powerful technique for designing more complex tests.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Type Hint</span></h1>
+    <p>
+        Type hinting is a formal solution to statically indicate the type of a value within your Python code. It was
+        specified in PEP 484 and introduced in Python 3.5. Here's an example of adding type information to a function.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Type cast</span></h1>
+    <p>
+        Type casting is a method used to change the variables or values declared in a certain data type into a different
+        data type to match the operation required to be performed by the code snippet. In python, this feature can be
+        accomplished by using constructor functions like int(), string(), float(), etc.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Unit test</span></h1>
+    <p>
+        The unit test framework in Python is called unittest, which comes packaged with Python. Unit testing makes your
+        code future proof since you anticipate the cases where your code could potentially fail or produce a bug.
+        Though you cannot predict all of the cases, you still address most of them.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Static</span></h1>
+    <p>
+        The static variable and static method are the widely used programming concepts in various languages such as
+        C++, PHP, Java, etc. These variables and methods belong to the class and the objects. In this section, we will
+        learn how we create static variables and methods in Python.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Class method</span></h1>
+    <p>
+        A class method is a method which is bound to the class and not the object of the class. They have the access to
+        the state of the class as it takes a class parameter that points to the class and not the object instance. It
+        can modify a class state that would apply across all the instances of the class.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Facade</span></h1>
+    <p>
+        Facade is a structural design pattern that provides a simplified (but limited) interface to a complex system of
+        classes, library or framework. While Facade decreases the overall complexity of the application, it also helps
+        to move unwanted dependencies to one place.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Design patterns</span></h1>
+    <p>
+        Design Patterns is the most essential part of Software Engineering, as they provide the general repeatable
+        solution to a commonly occurring problem in software design. They usually represent some of the best practices
+        adopted by experienced object-oriented software developers.
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Method</span></h1>
+    <p>
+        A method is a function that 'belongs to' an object. (In Python, the term method is not unique to
+        class instances, other object types can have methods as well. For example, list objects have methods called
+        append, insert, remove, sort, and so on.
+    </p>
+</div>
+</br>
+{% endblock %}
